@@ -11,10 +11,10 @@ try:
         guess_count -= 1
         user_guess_number = int(input('Guess a number: '))
         if user_guess_number == initial_guess_number:
-            print('You won!!!')
+            print('You got it right!!!')
             break
         else:
-            print('Wrong answer')
+            print('That was Wrong')
             print(f'You have {guess_count} guesses remaining')
     else:
         print('Game Over')
@@ -28,7 +28,7 @@ except ValueError:
             try:
                 num1 = int(input('Make a guess: '))
                 if num1 == level_system_number:
-                    print("You are right!!!")
+                    print("You got it right!!!")
                     break
                 else:
                     print("That was wrong")
